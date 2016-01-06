@@ -21,7 +21,7 @@ import javax.microedition.khronos.opengles.GL10;
  */
 public class SplitVideoRenderer extends BaseVideoRenderer{
 
-    private static final String TAG = "DefaultVideoRenderer";
+    private static final String TAG = "SplitVideoRenderer";
     private Video video_top;
     private Video video_bottom;
 
