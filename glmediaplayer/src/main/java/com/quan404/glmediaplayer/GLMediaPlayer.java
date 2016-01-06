@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.Surface;
 
 import com.quan404.glmediaplayer.config.LogConfig;
+import com.quan404.glmediaplayer.renderers.BaseVideoRenderer;
 import com.quan404.glmediaplayer.renderers.DefaultVideoRenderer;
 import com.quan404.glmediaplayer.views.VideoSurfaceView;
 
@@ -25,7 +26,7 @@ public class GLMediaPlayer {
         this(context, new DefaultVideoRenderer(context));
     }
 
-    public GLMediaPlayer(Context context, DefaultVideoRenderer renderer) {
+    public GLMediaPlayer(Context context, BaseVideoRenderer renderer) {
         if(renderer == null) {
             if(LogConfig.ON){
                 Log.e(TAG, "Renderer is null");

@@ -5,6 +5,7 @@ import android.opengl.GLSurfaceView;
 import android.util.AttributeSet;
 
 import com.quan404.glmediaplayer.GLMediaPlayer;
+import com.quan404.glmediaplayer.renderers.BaseVideoRenderer;
 import com.quan404.glmediaplayer.renderers.DefaultVideoRenderer;
 
 /**
@@ -13,9 +14,9 @@ import com.quan404.glmediaplayer.renderers.DefaultVideoRenderer;
 public class VideoSurfaceView extends GLSurfaceView{
 
     private GLMediaPlayer mediaPlayer;
-    private DefaultVideoRenderer mRenderer;
+    private BaseVideoRenderer mRenderer;
 
-    public VideoSurfaceView(Context context, GLMediaPlayer mp, DefaultVideoRenderer renderer) {
+    public VideoSurfaceView(Context context, GLMediaPlayer mp, BaseVideoRenderer renderer) {
         super(context);
 
         //TODO: Check if OpenGLES 2.0 is supported

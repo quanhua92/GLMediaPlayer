@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/01_basic_video_player" />
+            <option value="$PROJECT_DIR$/02_split_video_player" />
             <option value="$PROJECT_DIR$/glmediaplayer" />
             <option value="$PROJECT_DIR$/gltoolkit" />
           </set>

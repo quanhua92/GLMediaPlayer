@@ -13,34 +13,52 @@ import com.quan404.glmediaplayer.config.LogConfig;
 import com.quan404.gltoolkit.objects.Video;
 import com.quan404.gltoolkit.programs.VideoShaderProgram;
 
-import java.nio.ByteBuffer;
-import java.nio.FloatBuffer;
-
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 /**
  * Created by quanhua on 06/01/2016.
  */
-public class DefaultVideoRenderer extends BaseVideoRenderer{
+public class SplitVideoRenderer extends BaseVideoRenderer{
 
     private static final String TAG = "DefaultVideoRenderer";
-    private Video video;
+    private Video video_top;
+    private Video video_bottom;
 
-    public DefaultVideoRenderer(Context context) {
+    public SplitVideoRenderer(Context context) {
         super(context);
     }
 
     @Override
     public void onSurfaceCreated(GL10 gl10, EGLConfig eglConfig) {
         super.onSurfaceCreated(gl10, eglConfig);
-        video = new Video();
+
+        float[] VERTEX_DATA_TOP = {
+                // X, Y, Z, U, V
+                -1.0f, 0f, 0, 0.f, 0.f,
+                1.0f, 0f, 0, 0.5f, 0.f,
+                -1.0f,  1.0f, 0, 0.f, 1.f,
+                1.0f,  1.0f, 0, 0.5f, 1.f,
+        };
+        video_top = new Video(VERTEX_DATA_TOP);
+        float[] VERTEX_DATA_BOTTOM = {
+                // X, Y, Z, U, V
+                -1.0f, -1.0f, 0, 0.5f, 0.f,
+                1.0f, -1.0f, 0, 1f, 0.f,
+                -1.0f,  0f, 0, 0.5f, 1.f,
+                1.0f,  0f, 0, 1f, 1.f,
+        };
+        video_bottom = new Video(VERTEX_DATA_BOTTOM);
     }
 
     @Override
     public void onDrawFrame(GL10 gl10) {
         super.onDrawFrame(gl10);
-        video.bindData(videoShaderProgram);
-        video.draw();
+
+        video_top.bindData(videoShaderProgram);
+        video_top.draw();
+
+        video_bottom.bindData(videoShaderProgram);
+        video_bottom.draw();
     }
 }

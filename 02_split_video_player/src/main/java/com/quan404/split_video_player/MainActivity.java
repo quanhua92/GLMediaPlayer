@@ -1,10 +1,10 @@
-package com.quan404.basic_video_player;
+package com.quan404.split_video_player;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.quan404.glmediaplayer.GLMediaPlayer;
-import com.quan404.glmediaplayer.views.VideoSurfaceView;
+import com.quan404.glmediaplayer.renderers.SplitVideoRenderer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        glMediaPlayer = new GLMediaPlayer(this);
+        glMediaPlayer = new GLMediaPlayer(this, new SplitVideoRenderer(this));
         try{
             glMediaPlayer.setDataSource("http://html5demos.com/assets/dizzy.mp4");
 //            glMediaPlayer.setDataSource("http://d2kzl73ve6fjh6.cloudfront.net/videos/teleport_22-11-2015_13-11-40__8kX6dwsyML.mp4");

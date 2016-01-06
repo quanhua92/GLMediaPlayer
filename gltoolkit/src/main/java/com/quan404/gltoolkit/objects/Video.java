@@ -30,6 +30,10 @@ public class Video {
         this.vertexArray = new VertexArray(VERTEX_DATA);
     }
 
+    public Video(float[] vertex){
+        this.vertexArray = new VertexArray(vertex);
+    }
+
     public void bindData(VideoShaderProgram videoShaderProgram){
         vertexArray.setVertexAttribPointer(
                 0,
