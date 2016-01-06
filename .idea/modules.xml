@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01_basic_video_player/01_basic_video_player.iml" filepath="$PROJECT_DIR$/01_basic_video_player/01_basic_video_player.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GLMediaPlayer.iml" filepath="$PROJECT_DIR$/GLMediaPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glmediaplayer/glmediaplayer.iml" filepath="$PROJECT_DIR$/glmediaplayer/glmediaplayer.iml" />
+    </modules>
+  </component>
+</project>
