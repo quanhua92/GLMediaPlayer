@@ -3,6 +3,7 @@ package com.quan404.glmediaplayer;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.util.Log;
+import android.view.Surface;
 
 import com.quan404.glmediaplayer.config.LogConfig;
 import com.quan404.glmediaplayer.renderers.DefaultVideoRenderer;
@@ -67,6 +68,30 @@ public class GLMediaPlayer {
     public void resume(){
         if(LogConfig.ON){
             Log.d(TAG, "resume()");
+        }
+    }
+
+    public void setSurface(Surface surface) {
+        this.mediaPlayer.setSurface(surface);
+    }
+
+    public void setScreenOnWhilePlaying(boolean b) {
+        this.mediaPlayer.setScreenOnWhilePlaying(b);
+    }
+
+    public void prepare() {
+        try{
+            this.mediaPlayer.prepare();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public void start() {
+        try{
+            this.mediaPlayer.start();
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
 }
