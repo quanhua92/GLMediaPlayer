@@ -1,1 +1,1 @@
-include ':glmediaplayer', ':01_basic_video_player', ':gltoolkit', ':02_split_video_player'
+include ':glmediaplayer', ':01_basic_video_player', ':gltoolkit', ':02_split_video_player', ':03_split_translation_video_player'
