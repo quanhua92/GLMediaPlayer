@@ -24,7 +24,10 @@ public class VideoSurfaceView extends GLSurfaceView{
         mediaPlayer = mp;
         mRenderer = renderer;
         setRenderer(mRenderer);
+    }
 
+    public BaseVideoRenderer getRenderer(){
+        return mRenderer;
     }
 
 }

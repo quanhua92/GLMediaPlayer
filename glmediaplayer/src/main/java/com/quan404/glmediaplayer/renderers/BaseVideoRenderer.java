@@ -11,7 +11,6 @@ import android.view.Surface;
 
 import com.quan404.glmediaplayer.GLMediaPlayer;
 import com.quan404.glmediaplayer.config.LogConfig;
-import com.quan404.gltoolkit.objects.Video;
 import com.quan404.gltoolkit.programs.VideoShaderProgram;
 
 import javax.microedition.khronos.egl.EGLConfig;
@@ -23,7 +22,8 @@ import javax.microedition.khronos.opengles.GL10;
 public class BaseVideoRenderer implements GLSurfaceView.Renderer, SurfaceTexture.OnFrameAvailableListener, MediaPlayer.OnVideoSizeChangedListener {
 
     private static String TAG = "BaseVideoRenderer";
-    private GLMediaPlayer mediaPlayer;
+    private GLMediaPlayer glMediaPlayer;
+    private boolean MEDIA_PLAYER_READY = false;
     private static int GL_TEXTURE_EXTERNAL_OES = 0x8D65;
 
     // Properties
@@ -54,11 +54,11 @@ public class BaseVideoRenderer implements GLSurfaceView.Renderer, SurfaceTexture
     public BaseVideoRenderer(Context context) {
         this.context = context;
     }
-    public void setMediaPlayer(GLMediaPlayer player){
+    public void setGlMediaPlayer(GLMediaPlayer player){
         if (LogConfig.ON) {
-            Log.d(TAG, "setMediaPlayer");
+            Log.d(TAG, "setGlMediaPlayer");
         }
-        this.mediaPlayer = player;
+        this.glMediaPlayer = player;
     }
 
     @Override
@@ -90,16 +90,17 @@ public class BaseVideoRenderer implements GLSurfaceView.Renderer, SurfaceTexture
         mSurface.setOnFrameAvailableListener(this);
 
         Surface surface = new Surface(mSurface);
-        mediaPlayer.setSurface(surface);
-        mediaPlayer.setScreenOnWhilePlaying(true);
+        glMediaPlayer.setSurface(surface);
+        glMediaPlayer.setScreenOnWhilePlaying(true);
         surface.release();
-        mediaPlayer.prepare();
-        mediaPlayer.setOnVideoSizeChangedListener(this);
+        glMediaPlayer.prepare();
+        glMediaPlayer.setOnVideoSizeChangedListener(this);
 
         synchronized (this){
             updateSurface = false;
         }
-        mediaPlayer.start();
+        MEDIA_PLAYER_READY = true;
+        glMediaPlayer.start();
     }
 
     @Override
@@ -162,5 +163,9 @@ public class BaseVideoRenderer implements GLSurfaceView.Renderer, SurfaceTexture
                 1.0f,  curHeight / 2, 0, 1f, 1.f,
         };
         System.arraycopy(NEW_VERTEX_DATA, 0 , VERTEX_DATA, 0, NEW_VERTEX_DATA.length );
+    }
+
+    public boolean isReady(){
+        return MEDIA_PLAYER_READY;
     }
 }

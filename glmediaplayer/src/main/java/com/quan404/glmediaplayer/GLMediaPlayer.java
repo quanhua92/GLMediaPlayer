@@ -36,7 +36,7 @@ public class GLMediaPlayer {
         this.mediaPlayer = new MediaPlayer();
         this.context = context;
         this.mVideoView = new VideoSurfaceView(context, this, renderer);
-        renderer.setMediaPlayer(this);
+        renderer.setGlMediaPlayer(this);
     }
 
     //=================== + Getter + ===================
@@ -64,6 +64,10 @@ public class GLMediaPlayer {
         if(LogConfig.ON){
             Log.d(TAG, "pause()");
         }
+
+        if(mediaPlayer.isPlaying()){
+            mediaPlayer.pause();
+        }
     }
 
     public void resume(){
@@ -71,6 +75,12 @@ public class GLMediaPlayer {
             Log.d(TAG, "resume()");
         }
         // TODO: Resume player
+
+        if(mVideoView != null){
+            if( mVideoView.getRenderer().isReady()){
+                this.mediaPlayer.start();
+            }
+        }
     }
 
     public void setSurface(Surface surface) {
