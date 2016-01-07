@@ -34,7 +34,7 @@ public class DefaultVideoRenderer extends BaseVideoRenderer{
     @Override
     public void onSurfaceCreated(GL10 gl10, EGLConfig eglConfig) {
         super.onSurfaceCreated(gl10, eglConfig);
-        video = new Video();
+        video = new Video(VERTEX_DATA);
     }
 
     @Override
@@ -42,5 +42,11 @@ public class DefaultVideoRenderer extends BaseVideoRenderer{
         super.onDrawFrame(gl10);
         video.bindData(videoShaderProgram);
         video.draw();
+    }
+
+    @Override
+    protected void updateVertexArray() {
+        super.updateVertexArray();
+        video.setVertexArray(VERTEX_DATA);
     }
 }

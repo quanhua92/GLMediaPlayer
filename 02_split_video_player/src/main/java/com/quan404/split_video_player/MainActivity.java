@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
 //            glMediaPlayer.setDataSource("http://html5demos.com/assets/dizzy.mp4");
 //            glMediaPlayer.setDataSource("http://d2kzl73ve6fjh6.cloudfront.net/videos/teleport_22-11-2015_13-11-40__8kX6dwsyML.mp4");
 //            glMediaPlayer.setDataSource("http://d2kzl73ve6fjh6.cloudfront.net/videos/teleport_22-11-2015_13-22-00__8kX6dwsyML.mp4");
-//            glMediaPlayer.setDataSource("http://d2kzl73ve6fjh6.cloudfront.net/videos/teleport_22-11-2015_14-00-08__8kX6dwsyML.mp4");
+            glMediaPlayer.setDataSource("http://d2kzl73ve6fjh6.cloudfront.net/videos/teleport_22-11-2015_14-00-08__8kX6dwsyML.mp4");
 //            glMediaPlayer.setDataSource("http://storage.googleapis.com/exoplayer-test-media-1/mkv/android-screens-lavf-56.36.100-aac-avc-main-1280x720.mkv");
 
             // Emulator can only play 3GP files.
             // More files: http://download.wavetlan.com/SVV/Media/HTTP/http-3gp.htm
-            glMediaPlayer.setDataSource("http://download.wavetlan.com/SVV/Media/HTTP/3GP/QuickTime/Quicktime_test1_3GP2_H263_xbit_176x144_AR1.22_25fps_KF1in15_256kbps_AAC_Mono_48000Hz_96kbps.3g2");
+//            glMediaPlayer.setDataSource("http://download.wavetlan.com/SVV/Media/HTTP/3GP/QuickTime/Quicktime_test1_3GP2_H263_xbit_176x144_AR1.22_25fps_KF1in15_256kbps_AAC_Mono_48000Hz_96kbps.3g2");
         }catch (Exception e){
             e.printStackTrace();
         }

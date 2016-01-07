@@ -59,6 +59,7 @@ public class MainActivity extends Activity {
             renderer.adjustLeftPosition(0.01f);
         }
     };
+
     @Override
     protected void onResume() {
         super.onResume();

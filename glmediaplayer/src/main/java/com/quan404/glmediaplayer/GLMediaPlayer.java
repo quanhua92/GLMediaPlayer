@@ -70,6 +70,7 @@ public class GLMediaPlayer {
         if(LogConfig.ON){
             Log.d(TAG, "resume()");
         }
+        // TODO: Resume player
     }
 
     public void setSurface(Surface surface) {
@@ -94,5 +95,8 @@ public class GLMediaPlayer {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+    public void setOnVideoSizeChangedListener(MediaPlayer.OnVideoSizeChangedListener listener){
+        this.mediaPlayer.setOnVideoSizeChangedListener(listener);
     }
 }

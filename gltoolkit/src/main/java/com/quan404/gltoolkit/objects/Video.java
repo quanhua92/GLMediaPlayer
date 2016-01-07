@@ -18,18 +18,6 @@ public class Video {
 
     private VertexArray vertexArray;
 
-    private static final float[] VERTEX_DATA = {
-            // X, Y, Z, U, V
-            -1.0f, -1.0f, 0, 0.f, 0.f,
-            1.0f, -1.0f, 0, 1f, 0.f,
-            -1.0f,  1.0f, 0, 0.f, 1.f,
-            1.0f,  1.0f, 0, 1f, 1.f,
-    };
-
-    public Video() {
-        this.vertexArray = new VertexArray(VERTEX_DATA);
-    }
-
     public Video(float[] vertex){
         this.vertexArray = new VertexArray(vertex);
     }
