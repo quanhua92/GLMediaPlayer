@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         if(glMediaPlayer != null){
-            glMediaPlayer.pause();
+            glMediaPlayer.resume();
         }
     }
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         if(glMediaPlayer != null){
-            glMediaPlayer.resume();
+            glMediaPlayer.pause();
         }
     }
 }

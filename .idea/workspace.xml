@@ -29,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02_split_video_player/src/main/java/com/quan404/split_video_player/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4">
+              <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -65,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GLMediaPlayer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GLMediaPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/GLMediaPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6666667">
+            <state vertical-scroll-proportion="0.0">
               <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -157,7 +157,7 @@
         <entry file="file://$PROJECT_DIR$/01_basic_video_player/src/main/java/com/quan404/basic_video_player/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="132" selection-start-line="20" selection-start-column="132" selection-end-line="20" selection-end-column="132" />
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -5286,12 +5286,12 @@
         <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/SplitSquareVideoRenderer.java" />
         <option value="$PROJECT_DIR$/gltoolkit/src/main/java/com/quan404/gltoolkit/objects/Video.java" />
         <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/DefaultVideoRenderer.java" />
-        <option value="$PROJECT_DIR$/01_basic_video_player/src/main/java/com/quan404/basic_video_player/MainActivity.java" />
-        <option value="$PROJECT_DIR$/02_split_video_player/src/main/java/com/quan404/split_video_player/MainActivity.java" />
         <option value="$PROJECT_DIR$/03_split_translation_video_player/src/main/java/com/quan404/split_translation_video_player/MainActivity.java" />
         <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/views/VideoSurfaceView.java" />
         <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/GLMediaPlayer.java" />
         <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/BaseVideoRenderer.java" />
+        <option value="$PROJECT_DIR$/01_basic_video_player/src/main/java/com/quan404/basic_video_player/MainActivity.java" />
+        <option value="$PROJECT_DIR$/02_split_video_player/src/main/java/com/quan404/split_video_player/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -5832,7 +5832,7 @@
       <recent name="com.quan404.glmediaplayer.renderers" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Application.03_split_translation_video_player">
+  <component name="RunManager" selected="Android Application.01_basic_video_player">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -6086,7 +6086,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38906753" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38906753" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -6360,22 +6360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_basic_video_player/src/main/java/com/quan404/basic_video_player/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="132" selection-start-line="20" selection-start-column="132" selection-end-line="20" selection-end-column="132" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_split_video_player/src/main/java/com/quan404/split_video_player/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/DefaultVideoRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -6448,7 +6432,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/GLMediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6666667">
+        <state vertical-scroll-proportion="0.0">
           <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -6459,6 +6443,22 @@
             <element signature="e#2375#2376#0" expanded="true" />
             <element signature="e#2427#2428#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_basic_video_player/src/main/java/com/quan404/basic_video_player/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02_split_video_player/src/main/java/com/quan404/split_video_player/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
