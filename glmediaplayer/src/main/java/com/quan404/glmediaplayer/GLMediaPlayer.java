@@ -86,11 +86,7 @@ public class GLMediaPlayer {
     public void setSurface(Surface surface) {
         this.mediaPlayer.setSurface(surface);
     }
-
-    public void setScreenOnWhilePlaying(boolean b) {
-        this.mediaPlayer.setScreenOnWhilePlaying(b);
-    }
-
+    
     public void prepare() {
         try{
             this.mediaPlayer.prepare();
