@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/02_split_video_player" />
             <option value="$PROJECT_DIR$/03_split_translation_video_player" />
             <option value="$PROJECT_DIR$/04_basic_custom_exo_player" />
+            <option value="$PROJECT_DIR$/05_split_custom_exo_player" />
             <option value="$PROJECT_DIR$/glmediaplayer" />
             <option value="$PROJECT_DIR$/gltoolkit" />
           </set>

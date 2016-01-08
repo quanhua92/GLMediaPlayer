@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/02_split_video_player/02_split_video_player.iml" filepath="$PROJECT_DIR$/02_split_video_player/02_split_video_player.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_split_translation_video_player/03_split_translation_video_player.iml" filepath="$PROJECT_DIR$/03_split_translation_video_player/03_split_translation_video_player.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_basic_custom_exo_player/04_basic_custom_exo_player.iml" filepath="$PROJECT_DIR$/04_basic_custom_exo_player/04_basic_custom_exo_player.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_split_custom_exo_player/05_split_custom_exo_player.iml" filepath="$PROJECT_DIR$/05_split_custom_exo_player/05_split_custom_exo_player.iml" />
       <module fileurl="file://$PROJECT_DIR$/GLMediaPlayer.iml" filepath="$PROJECT_DIR$/GLMediaPlayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/glmediaplayer/glmediaplayer.iml" filepath="$PROJECT_DIR$/glmediaplayer/glmediaplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/gltoolkit/gltoolkit.iml" filepath="$PROJECT_DIR$/gltoolkit/gltoolkit.iml" />
