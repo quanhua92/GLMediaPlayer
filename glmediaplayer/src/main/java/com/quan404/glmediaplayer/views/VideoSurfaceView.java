@@ -13,15 +13,13 @@ import com.quan404.glmediaplayer.renderers.DefaultVideoRenderer;
  */
 public class VideoSurfaceView extends GLSurfaceView{
 
-    private GLMediaPlayer mediaPlayer;
     private BaseVideoRenderer mRenderer;
 
-    public VideoSurfaceView(Context context, GLMediaPlayer mp, BaseVideoRenderer renderer) {
+    public VideoSurfaceView(Context context, BaseVideoRenderer renderer) {
         super(context);
 
         //TODO: Check if OpenGLES 2.0 is supported
         setEGLContextClientVersion(2);
-        mediaPlayer = mp;
         mRenderer = renderer;
         setRenderer(mRenderer);
     }

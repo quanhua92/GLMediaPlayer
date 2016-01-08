@@ -66,17 +66,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GLMediaPlayer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GLMediaPlayer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/GLMediaPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="80" column="41" selection-start-line="79" selection-start-column="52" selection-end-line="80" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.26666668">
+              <caret line="89" column="23" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#1376#1377#0" expanded="true" />
-                <element signature="e#1409#1410#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,20 +82,20 @@
         <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/views/VideoSurfaceView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding>
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SplitSquareVideoRenderer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SplitSquareVideoRenderer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/SplitSquareVideoRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53333336">
-              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -109,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/BaseVideoRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="152" selection-end-column="9" />
+              <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -4697,12 +4693,12 @@
         <option value="$PROJECT_DIR$/gltoolkit/src/main/java/com/quan404/gltoolkit/objects/Video.java" />
         <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/DefaultVideoRenderer.java" />
         <option value="$PROJECT_DIR$/03_split_translation_video_player/src/main/java/com/quan404/split_translation_video_player/MainActivity.java" />
-        <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/views/VideoSurfaceView.java" />
         <option value="$PROJECT_DIR$/02_split_video_player/src/main/java/com/quan404/split_video_player/MainActivity.java" />
         <option value="$PROJECT_DIR$/01_basic_video_player/src/main/java/com/quan404/basic_video_player/MainActivity.java" />
         <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/BaseVideoRenderer.java" />
-        <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/GLMediaPlayer.java" />
         <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/SplitSquareVideoRenderer.java" />
+        <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/views/VideoSurfaceView.java" />
+        <option value="$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/GLMediaPlayer.java" />
       </list>
     </option>
   </component>
@@ -5579,10 +5575,6 @@
           <caret line="80" column="41" selection-start-line="79" selection-start-column="52" selection-end-line="80" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1409#1410#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5592,8 +5584,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5865,17 +5857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/views/VideoSurfaceView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02_split_video_player/src/main/java/com/quan404/split_video_player/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -5903,16 +5884,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/GLMediaPlayer.java">
+    <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/SplitSquareVideoRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="41" selection-start-line="79" selection-start-column="52" selection-end-line="80" selection-end-column="41" />
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/views/VideoSurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5920,18 +5906,20 @@
     <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/BaseVideoRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="152" selection-end-column="9" />
+          <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/renderers/SplitSquareVideoRenderer.java">
+    <entry file="file://$PROJECT_DIR$/glmediaplayer/src/main/java/com/quan404/glmediaplayer/GLMediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53333336">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.26666668">
+          <caret line="89" column="23" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

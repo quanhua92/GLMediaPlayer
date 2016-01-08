@@ -35,7 +35,7 @@ public class GLMediaPlayer {
         }
         this.mediaPlayer = new MediaPlayer();
         this.context = context;
-        this.mVideoView = new VideoSurfaceView(context, this, renderer);
+        this.mVideoView = new VideoSurfaceView(context, renderer);
         renderer.setGlMediaPlayer(this);
     }
 
