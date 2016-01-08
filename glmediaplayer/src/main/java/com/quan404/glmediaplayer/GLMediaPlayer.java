@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.Surface;
 
 import com.quan404.glmediaplayer.config.LogConfig;
+import com.quan404.glmediaplayer.players.AndroidPlayer;
+import com.quan404.glmediaplayer.players.BasePlayer;
 import com.quan404.glmediaplayer.renderers.BaseVideoRenderer;
 import com.quan404.glmediaplayer.renderers.DefaultVideoRenderer;
 import com.quan404.glmediaplayer.views.VideoSurfaceView;
@@ -17,7 +19,7 @@ import java.io.IOException;
  */
 public class GLMediaPlayer {
     private final static String TAG = "GLMediaPlayer";
-    private MediaPlayer mediaPlayer = null;
+    private BasePlayer mediaPlayer = null;
     private Context context = null;
     private VideoSurfaceView mVideoView;
 
@@ -33,7 +35,7 @@ public class GLMediaPlayer {
             }
             return;
         }
-        this.mediaPlayer = new MediaPlayer();
+        this.mediaPlayer = new AndroidPlayer();
         this.context = context;
         this.mVideoView = new VideoSurfaceView(context, renderer);
         renderer.setGlMediaPlayer(this);
