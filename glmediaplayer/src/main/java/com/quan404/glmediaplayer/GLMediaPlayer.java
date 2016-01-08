@@ -86,7 +86,7 @@ public class GLMediaPlayer {
     public void setSurface(Surface surface) {
         this.mediaPlayer.setSurface(surface);
     }
-    
+
     public void prepare() {
         try{
             this.mediaPlayer.prepare();

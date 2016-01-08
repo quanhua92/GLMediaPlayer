@@ -67,9 +67,12 @@ public class SplitSquareVideoRenderer extends BaseVideoRenderer{
 
     @Override
     protected void updateWidthHeight(){
-        super.updateWidthHeight();
+        if (SURFACE_HEIGHT > 0 && VIDEO_HEIGHT > 0) {
 
-        if (SURFACE_HEIGHT > 0 && VIDEO_HEIGHT > 0){
+            float new_width = VIDEO_HEIGHT * 2;
+            float HEIGHT_IN_PX = VIDEO_HEIGHT * SURFACE_WIDTH / new_width;
+            curHeight = HEIGHT_IN_PX * 2.0f / SURFACE_HEIGHT * 1.0f;
+
             if ( VIDEO_WIDTH > 2 * VIDEO_HEIGHT){
                 // 3D side by side video
                 curWidth = VIDEO_HEIGHT * 1.0f / (VIDEO_WIDTH * 1.0f);
