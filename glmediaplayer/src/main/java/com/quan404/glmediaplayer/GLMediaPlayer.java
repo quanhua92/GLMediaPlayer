@@ -26,7 +26,10 @@ public class GLMediaPlayer {
 
     //=================== + Constructors + ===================
     public GLMediaPlayer(Context context) {
-        this(context, new DefaultVideoRenderer(context), false);
+        this(context, false);
+    }
+    public GLMediaPlayer(Context context, boolean useExoPlayer) {
+        this(context, new DefaultVideoRenderer(context), useExoPlayer);
     }
 
     public GLMediaPlayer(Context context, BaseVideoRenderer renderer, boolean useExoPlayer) {
