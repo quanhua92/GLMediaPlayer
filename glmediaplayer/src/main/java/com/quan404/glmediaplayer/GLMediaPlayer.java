@@ -40,7 +40,7 @@ public class GLMediaPlayer {
             return;
         }
         if(useExoPlayer){
-            this.mediaPlayer = new CustomExoPlayer();
+            this.mediaPlayer = new CustomExoPlayer(context);
         }else{
             this.mediaPlayer = new AndroidPlayer();
         }

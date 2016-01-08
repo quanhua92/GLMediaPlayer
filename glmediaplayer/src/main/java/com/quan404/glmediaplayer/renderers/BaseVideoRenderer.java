@@ -91,7 +91,7 @@ public class BaseVideoRenderer implements GLSurfaceView.Renderer, SurfaceTexture
 
         Surface surface = new Surface(mSurface);
         glMediaPlayer.setSurface(surface);
-        surface.release();
+//        surface.release();
         glMediaPlayer.prepare();
         glMediaPlayer.setOnVideoSizeChangedListener(this);
 
