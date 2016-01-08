@@ -113,7 +113,7 @@ public class GLMediaPlayer {
             e.printStackTrace();
         }
     }
-    public void setOnVideoSizeChangedListener(MediaPlayer.OnVideoSizeChangedListener listener){
+    public void setOnVideoSizeChangedListener(BasePlayer.OnVideoSizeChangedListener listener){
         this.mediaPlayer.setOnVideoSizeChangedListener(listener);
     }
 }

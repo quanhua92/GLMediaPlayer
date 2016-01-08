@@ -11,6 +11,7 @@ import android.view.Surface;
 
 import com.quan404.glmediaplayer.GLMediaPlayer;
 import com.quan404.glmediaplayer.config.LogConfig;
+import com.quan404.glmediaplayer.players.BasePlayer;
 import com.quan404.gltoolkit.programs.VideoShaderProgram;
 
 import javax.microedition.khronos.egl.EGLConfig;
@@ -19,7 +20,7 @@ import javax.microedition.khronos.opengles.GL10;
 /**
  * Created by quanhua on 06/01/2016.
  */
-public class BaseVideoRenderer implements GLSurfaceView.Renderer, SurfaceTexture.OnFrameAvailableListener, MediaPlayer.OnVideoSizeChangedListener {
+public class BaseVideoRenderer implements GLSurfaceView.Renderer, SurfaceTexture.OnFrameAvailableListener, BasePlayer.OnVideoSizeChangedListener {
 
     private static String TAG = "BaseVideoRenderer";
     private GLMediaPlayer glMediaPlayer;
@@ -136,7 +137,7 @@ public class BaseVideoRenderer implements GLSurfaceView.Renderer, SurfaceTexture
     }
 
     @Override
-    public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
+    public void onVideoSizeChanged(int width, int height) {
         VIDEO_WIDTH = width;
         VIDEO_HEIGHT = height;
 

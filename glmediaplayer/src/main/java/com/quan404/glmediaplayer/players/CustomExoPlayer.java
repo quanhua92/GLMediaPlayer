@@ -48,6 +48,8 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
     public static final int TYPE_VIDEO = 0;
     public static final int TYPE_AUDIO = 1;
 
+    private BasePlayer.OnVideoSizeChangedListener listener;
+
     public CustomExoPlayer(Context context) {
         this.context = context;
         this.mainHandler = new Handler(Looper.getMainLooper());
@@ -127,8 +129,8 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
     }
 
     @Override
-    public void setOnVideoSizeChangedListener(MediaPlayer.OnVideoSizeChangedListener listener) {
-
+    public void setOnVideoSizeChangedListener(BasePlayer.OnVideoSizeChangedListener listener) {
+        this.listener = listener;
     }
 
     public Handler getMainHandler(){
@@ -145,6 +147,7 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
         if(LogConfig.ON){
             Log.d(TAG, "onVideoSizeChanged : " + width + " " + height);
         }
+        listener.onVideoSizeChanged(width, height);
     }
 
     @Override

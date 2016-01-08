@@ -21,5 +21,9 @@ public interface BasePlayer {
 
     void prepare() throws Exception;
 
-    void setOnVideoSizeChangedListener(MediaPlayer.OnVideoSizeChangedListener listener);
+    void setOnVideoSizeChangedListener(OnVideoSizeChangedListener listener);
+
+    interface OnVideoSizeChangedListener{
+        void onVideoSizeChanged(int width, int height);
+    }
 }
