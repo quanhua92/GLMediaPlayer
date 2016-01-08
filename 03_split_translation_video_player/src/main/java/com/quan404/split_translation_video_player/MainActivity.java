@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
         videoLayout = (ViewGroup) findViewById(R.id.video);
 
         renderer = new SplitSquareVideoRenderer(this);
-        glMediaPlayer = new GLMediaPlayer(this, renderer);
+        glMediaPlayer = new GLMediaPlayer(this, renderer, false);
         try{
 //            glMediaPlayer.setDataSource("http://html5demos.com/assets/dizzy.mp4");
 //            glMediaPlayer.setDataSource("http://d2kzl73ve6fjh6.cloudfront.net/videos/teleport_22-11-2015_13-11-40__8kX6dwsyML.mp4");

@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        glMediaPlayer = new GLMediaPlayer(this, new SplitVideoRenderer(this));
+        glMediaPlayer = new GLMediaPlayer(this, new SplitVideoRenderer(this), false);
         try{
 //            glMediaPlayer.setDataSource("http://html5demos.com/assets/dizzy.mp4");
 //            glMediaPlayer.setDataSource("http://d2kzl73ve6fjh6.cloudfront.net/videos/teleport_22-11-2015_13-11-40__8kX6dwsyML.mp4");

@@ -8,6 +8,7 @@ import android.view.Surface;
 import com.quan404.glmediaplayer.config.LogConfig;
 import com.quan404.glmediaplayer.players.AndroidPlayer;
 import com.quan404.glmediaplayer.players.BasePlayer;
+import com.quan404.glmediaplayer.players.CustomExoPlayer;
 import com.quan404.glmediaplayer.renderers.BaseVideoRenderer;
 import com.quan404.glmediaplayer.renderers.DefaultVideoRenderer;
 import com.quan404.glmediaplayer.views.VideoSurfaceView;
@@ -25,17 +26,22 @@ public class GLMediaPlayer {
 
     //=================== + Constructors + ===================
     public GLMediaPlayer(Context context) {
-        this(context, new DefaultVideoRenderer(context));
+        this(context, new DefaultVideoRenderer(context), false);
     }
 
-    public GLMediaPlayer(Context context, BaseVideoRenderer renderer) {
+    public GLMediaPlayer(Context context, BaseVideoRenderer renderer, boolean useExoPlayer) {
         if(renderer == null) {
             if(LogConfig.ON){
                 Log.e(TAG, "Renderer is null");
             }
             return;
         }
-        this.mediaPlayer = new AndroidPlayer();
+        if(useExoPlayer){
+            this.mediaPlayer = new CustomExoPlayer();
+        }else{
+            this.mediaPlayer = new AndroidPlayer();
+        }
+
         this.context = context;
         this.mVideoView = new VideoSurfaceView(context, renderer);
         renderer.setGlMediaPlayer(this);
