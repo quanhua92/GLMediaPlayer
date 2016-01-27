@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.util.Log;
 import android.view.Surface;
 
+import com.google.android.exoplayer.ExoPlayer;
 import com.quan404.glmediaplayer.config.LogConfig;
 import com.quan404.glmediaplayer.players.AndroidPlayer;
 import com.quan404.glmediaplayer.players.BasePlayer;
@@ -89,7 +90,12 @@ public class GLMediaPlayer {
 
         if(mVideoView != null){
             if( mVideoView.getRenderer().isReady()){
-                this.mediaPlayer.start();
+                if(mediaPlayer instanceof CustomExoPlayer) {
+                    CustomExoPlayer exoPlayer = (CustomExoPlayer) this.mediaPlayer;
+                    exoPlayer.resume();
+                } else {
+                    this.mediaPlayer.start();
+                }
             }
         }
     }
@@ -115,5 +121,9 @@ public class GLMediaPlayer {
     }
     public void setOnVideoSizeChangedListener(BasePlayer.OnVideoSizeChangedListener listener){
         this.mediaPlayer.setOnVideoSizeChangedListener(listener);
+    }
+
+    public BasePlayer getMediaPlayer() {
+        return mediaPlayer;
     }
 }

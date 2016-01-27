@@ -1,6 +1,7 @@
 package com.quan404.glmediaplayer.players;
 
 import com.google.android.exoplayer.DummyTrackRenderer;
+import com.google.android.exoplayer.ExoPlaybackException;
 import com.google.android.exoplayer.ExoPlayer;
 import com.google.android.exoplayer.MediaCodecAudioTrackRenderer;
 import com.google.android.exoplayer.MediaCodecTrackRenderer;
@@ -22,6 +23,8 @@ import com.quan404.glmediaplayer.players.exorenderers.TextureVideoTrackRenderer;
 import android.content.Context;
 import android.media.MediaCodec;
 import android.media.MediaPlayer;
+import android.media.session.MediaController;
+import android.media.session.PlaybackState;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
@@ -70,29 +73,44 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
 
     @Override
     public void setDataSource(String dataPath) throws IOException {
-        if(LogConfig.ON){
-            Log.d(TAG, "setDataSource " + dataPath);
-        }
         this.dataPath = dataPath;
     }
 
     @Override
     public boolean isPlaying() {
-        return false;
+        return this.player.getPlayWhenReady();
     }
 
     @Override
     public void pause() {
-//        this.player.stop();
+        this.player.setPlayWhenReady(false);
+    }
+
+    public void stop() {
+        this.player.stop();
+        this.player.release();
     }
 
     @Override
     public void start() {
+        preparePlayer(true);
+    }
+
+    public void seekTo(long position) {
+        this.player.seekTo(position);
+    }
+
+    public long getCurrentPosition() {
+        return this.player.getCurrentPosition();
+    }
+
+    public void resume() {
+        this.player.setPlayWhenReady(true);
     }
 
     @Override
     public void setSurface(Surface surface) {
-        if(LogConfig.ON){
+        if (LogConfig.ON) {
             Log.d(TAG, "setSurface " + surface);
         }
         this.surface = surface;
@@ -100,6 +118,10 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
 
     @Override
     public void prepare() throws Exception {
+        preparePlayer(true);
+    }
+
+    private void preparePlayer(boolean playWhenReady) {
         Uri uri = Uri.parse(dataPath);
         Allocator allocator = new DefaultAllocator(BUFFER_SEGMENT_SIZE);
         // Build the video and audio renderers.
@@ -125,7 +147,7 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
         Log.e(TAG, "after send Message");
 //        onRenderers(renderers, bandwidthMeter);
         player.prepare(renderers);
-        player.setPlayWhenReady(true);
+        player.setPlayWhenReady(playWhenReady);
     }
 
     @Override
@@ -133,7 +155,11 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
         this.listener = listener;
     }
 
-    public Handler getMainHandler(){
+    public void addListener(ExoPlayer.Listener listener) {
+        player.addListener(listener);
+    }
+
+    public Handler getMainHandler() {
         return mainHandler;
     }
 
@@ -144,7 +170,7 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
 
     @Override
     public void onVideoSizeChanged(int width, int height, int unappliedRotationDegrees, float pixelWidthHeightRatio) {
-        if(LogConfig.ON){
+        if (LogConfig.ON) {
             Log.d(TAG, "onVideoSizeChanged : " + width + " " + height);
         }
         listener.onVideoSizeChanged(width, height);
@@ -152,7 +178,7 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
 
     @Override
     public void onDrawnToSurface(Surface surface) {
-        if(LogConfig.ON){
+        if (LogConfig.ON) {
             Log.d(TAG, "onDrawnToSurface : " + surface);
         }
     }
@@ -200,6 +226,7 @@ public class CustomExoPlayer implements BasePlayer, TextureVideoTrackRenderer.Ev
         pushSurface(false);
         player.prepare(renderers);
     }
+
     private void pushSurface(boolean blockForSurfacePush) {
         Log.e(TAG, "pushSurface " + blockForSurfacePush);
         if (videoRenderer == null) {

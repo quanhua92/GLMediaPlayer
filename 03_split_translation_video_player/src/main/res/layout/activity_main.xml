@@ -23,6 +23,18 @@
             android:text="Right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume"
+            android:id="@+id/btnResume" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAUSE"
+            android:id="@+id/btnPause" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/video"

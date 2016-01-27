@@ -94,12 +94,14 @@ public class SplitSquareVideoRenderer extends BaseVideoRenderer{
     }
 
     public void adjustLeftPosition(float delta) {
-        float value = getCurLeft();
-        value += delta;
-        value = Math.min(Math.max(value, 0.0f), 0.5f - curWidth);
+        if(video_left != null && video_right != null) {
+            float value = getCurLeft();
+            value += delta;
+            value = Math.min(Math.max(value, 0.0f), 0.5f - curWidth);
 
-        curLeft = value;
+            curLeft = value;
 
-        updateVertexArray();
+            updateVertexArray();
+        }
     }
 }
